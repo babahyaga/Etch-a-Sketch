@@ -1,7 +1,9 @@
 #container{
     display: grid;
-    grid-template-columns: auto repeat(15, auto)
-}
+    grid-template-columns: repeat(var(--gridNum), auto);
+    grid-template-rows: repeat(var(--gridNum), auto);
+    
+} 
 
 .gridsquare{
     background-color: rgba(255, 255, 255, 0.8);
@@ -15,3 +17,6 @@
     background-color: black;
 }
 
+:root {
+    --gridNum: ;
+  }
